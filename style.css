@@ -4,28 +4,143 @@
     padding: 0;
 }
 
-.main_opacity{
-    background: #000;
-}
-
 .main_bg{
-    /* min-width: 100%; */
+    position: relative;
     background-image: url(img/main_bg.jpg);
-    min-height: 2000px;
+    min-height: 3000px;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     /* background-attachment: fixed; */
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.6;
+    -o-background-size: cover; */
+    background-size: 100% auto;
 
 }
+
+.main_bg::before {
+    content: ''; /* Необходим для отображения псевдоэлемента */
+    position: absolute; /* Позволяет разместить слой поверх фоновой картинки */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+    z-index: 1; /* Размещает слой поверх фоновой картинки */
+}
+
+.main_bg > * {
+    position: relative; /* Заставляет контент быть поверх затемняющего слоя */
+    z-index: 2;
+}
+/* .main_bg{ */
+    /* background: #000; */
+    /* opacity: 0.6; */
+    /* min-height: 2700px;
+
+} */
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px;
 }
 
+.logo{
+    color:#ffffff;
+}
+
+.menu{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_link{
+    color: #fff;
+    font-family: Gilroy, serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.account{
+    color:#fff;
+    font-family: Gilroy, serif;
+    font-size: 18px;
+}
+
+.promo{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promo_socials{
+    color: #fff;
+    display: block;
+}
+
+.follow_container{
+    height: 90px;
+    padding: 0;
+}
+
+.follow{
+    transform: rotate(90deg); 
+    display: inline-block; 
+    white-space: nowrap;
+}
+
+.promo_center{
+    color: #fff;
+    font-family: Gilroy, serif;
+    /* text-decoration: none; */
+}
+
+.hiking{
+    position: relative;
+    padding-left: 110px;
+    font-size: 18px;
+    color:#F4A900;
+    font-weight: 900;
+    letter-spacing: 6px;
+}
+
+.hiking::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 2px;
+    background-color: #F4A900;
+}
+
+.promo_big_text{
+    margin-top: 20px;
+    font-size: 88px;
+    font-family: Chronicle;
+}
+
+.scroll_down{
+    margin-top: 20px;;
+}
+
+.promo_right{
+    color: #fff;
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url('./fonts/Gilroy-Light.otf')format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: Chronicle;
+    src: url('./fonts/Chronicle\ Display\ Semibold.otf')format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
