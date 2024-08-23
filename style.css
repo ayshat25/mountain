@@ -91,6 +91,11 @@ header{
     white-space: nowrap;
 }
 
+.inst{
+    text-decoration: none;
+    color: inherit;
+}
+
 .promo_center{
     color: #fff;
     font-family: Gilroy, serif;
