@@ -48,6 +48,8 @@ header{
 
 .logo{
     color:#ffffff;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .menu{
@@ -61,12 +63,19 @@ header{
     font-family: Gilroy, serif;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+}
+
+.bi-person-circle{
+    margin-right: 15px;
+    padding-top: 2px;
 }
 
 .account{
     color:#fff;
     font-family: Gilroy, serif;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .promo{
@@ -81,19 +90,27 @@ header{
 }
 
 .follow_container{
-    height: 90px;
+    height: 80px;
     padding: 0;
 }
 
 .follow{
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: -25px;
     transform: rotate(90deg); 
     display: inline-block; 
     white-space: nowrap;
 }
 
-.inst{
+.inst, .twit{
+    display: block;
     text-decoration: none;
     color: inherit;
+    margin-top: 20px;
+    margin-left: 3px;
 }
 
 .promo_center{
@@ -129,7 +146,13 @@ header{
 }
 
 .scroll_down{
-    margin-top: 20px;;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bi-arrow-down{
+    margin-left: 10px;
 }
 
 .promo_right{
