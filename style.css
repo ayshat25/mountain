@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+.container{
+    width: 68%;
+    margin: 0 auto;
+}
+
 .main_bg{
     position: relative;
     background-image: url(img/main_bg.jpg);
@@ -129,12 +134,13 @@ header{
     position: relative;
     padding-left: 110px;
     font-size: 18px;
-    color:#F4A900;
+    color:#ffff9e;
     font-weight: 900;
     letter-spacing: 6px;
     font-family: Gilroy;
 }
 
+.get_started::before,
 .hiking::before{
     content:'';
     position: absolute;
@@ -143,7 +149,7 @@ header{
     transform: translateY(-50%);
     width: 75px;
     height: 2px;
-    background-color: #F4A900;
+    background-color: #ffff9e;
 }
 
 .promo_big_text{
@@ -185,7 +191,46 @@ header{
     height: 800px;
 }
 
-.container{
-    width: 75%;
-    margin: 0 auto;
+.firstbg_left{
+    width: 632px;
+    margin-top: 130px;
+}
+
+.big_text{
+    margin-top: 20px;
+    font-size: 64px;
+    font-family: Chronicle;
+    color:#fff;
+}
+
+.little_text{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    font-family: Gilroy;
+    font-weight: bold;
+    line-height: 37px;
+}
+
+.read_more{
+    font-family: Gilroy;
+    color:#ffff9e;
+    margin-top: 30px;
+    font-weight: bold;
+
+}
+
+.firstbg_inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.read_more i{
+    margin-left: 20px;
+    /* padding-top: 20px; */
+}
+
+.count{
+    color: #fff;
 }
