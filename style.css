@@ -7,26 +7,32 @@
 .main_bg{
     position: relative;
     background-image: url(img/main_bg.jpg);
-    min-height: 3000px;
+    min-height: 1100px;
     background-repeat: no-repeat;
     background-position: top center;
-    /* background-attachment: fixed; */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
     background-size: 100% auto;
-
 }
 
 .main_bg::before {
-    content: ''; /* Необходим для отображения псевдоэлемента */
-    position: absolute; /* Позволяет разместить слой поверх фоновой картинки */
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
-    z-index: 1; /* Размещает слой поверх фоновой картинки */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+.main_bg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Начинаем от низа */
+    height: 300px; /* Высота градиента, можете изменять */
+    background: linear-gradient(to top, rgba(11, 29, 38), rgba(0, 0, 0, 0)); /* Градиент от черного к прозрачному */
+    z-index: 2; /* Делаем этот слой выше, чем ::before */
 }
 
 .main_bg > * {
@@ -119,13 +125,14 @@ header{
     /* text-decoration: none; */
 }
 
-.hiking{
+.hiking, .get_started{
     position: relative;
     padding-left: 110px;
     font-size: 18px;
     color:#F4A900;
     font-weight: 900;
     letter-spacing: 6px;
+    font-family: Gilroy;
 }
 
 .hiking::before{
@@ -171,4 +178,14 @@ header{
     src: url('./fonts/Chronicle\ Display\ Semibold.otf')format(truetype);
     font-style: normal;
     font-weight: normal;
+}
+
+.firstbg{
+    background-color: #0B1D26;
+    height: 800px;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
 }
