@@ -5,7 +5,7 @@
 }
 
 .container{
-    width: 68%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -186,12 +186,15 @@ header{
     font-weight: normal;
 }
 
-.firstbg{
+.firstbg, .secondbg, .thirdbg{
+    padding-top: 80px;
     background-color: #0B1D26;
     height: 800px;
 }
 
-.firstbg_left{
+.firstbg_left, .thirdbg_left{
+    padding: 33px;
+    padding-left: 100px;
     width: 632px;
     margin-top: 130px;
 }
@@ -221,9 +224,10 @@ header{
 
 }
 
-.firstbg_inner{
+.firstbg_inner, .thirdbg_inner{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .read_more i{
@@ -233,4 +237,47 @@ header{
 
 .count{
     color: #fff;
+    font-family: Gilroy;
+    font-size: 240px;
+    font-weight: 1000;
+    position: absolute;
+    opacity: 0.1;
+    inset: -1;
+    margin-top: 35px;
+}
+
+.secondbg_inner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.secondbg_right{
+    /* padding: 33px; */
+    padding-left: 100px;
+    width: 632px;
+    margin-top: 130px;
+}
+
+.count2{
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 240px;
+    font-weight: 1000;
+    position: absolute;
+    opacity: 0.1;
+    inset: -1;
+    margin-left: 610px;
+}
+
+footer{
+    background-color: #0B1D26;
+    display: flex;
+    justify-content: space-between;
+    color: #fff ;
+}
+
+.footer_right{
+    display: flex;
+    justify-content: space-between;
 }
