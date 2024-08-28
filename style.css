@@ -90,14 +90,17 @@ header{
 }
 
 .promo{
-    margin-top: 80px;
+    /* position: relative; */
+    margin-top: 160px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
 }
 
 .promo_socials{
     color: #fff;
     display: block;
+    margin-top: 61px;
+    margin-left: 55px;
 }
 
 .follow_container{
@@ -127,6 +130,8 @@ header{
 .promo_center{
     color: #fff;
     font-family: Gilroy, serif;
+    margin: 0 auto;
+    /* position: absolute; */
     /* text-decoration: none; */
 }
 
@@ -168,8 +173,21 @@ header{
     margin-left: 10px;
 }
 
+body{
+    position: relative;
+}
+
 .promo_right{
     color: #fff;
+    /* position: absolute; */
+    z-index: 2;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    top: 40%;
+    right: 5%;
+    position: fixed;
 }
 
 @font-face{
