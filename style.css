@@ -75,6 +75,7 @@ header{
     width: 300px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .menu_link{
@@ -95,20 +96,25 @@ header{
     font-family: Gilroy, serif;
     font-size: 17px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .promo{
     /* position: relative; */
-    margin-top: 160px;
+    margin-top: 105px;
     display: flex;
     /* justify-content: space-between; */
 }
 
 .promo_socials{
     color: #fff;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
     margin-top: 61px;
-    margin-left: 55px;
+    margin-left: 30px;
 }
 
 .follow_container{
@@ -116,14 +122,18 @@ header{
     padding: 0;
 }
 
+.promo_icons{
+    margin-top: 29px;
+}
+
 .follow{
     font-family: Gilroy, serif;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 30px;
-    margin-left: -23px;
+    /* margin-top: 30px; */
+    margin-left: 7px;
     transform: rotate(90deg); 
-    display: inline-block; 
+    /* display: inline-block;  */
     white-space: nowrap;
 }
 
@@ -213,6 +223,7 @@ header{
 }
 
 .firstbg, .secondbg, .thirdbg{
+    /* position: absolute; */
     padding-top: 80px;
     background-color: #0B1D26;
     height: 800px;
@@ -299,7 +310,8 @@ header{
 footer{
     background-color: #0B1D26;
     padding-bottom: 50px;
-    padding-top: 135px;
+    padding-top: 150px;
+    /* height: 450px; */
 }
 
 
@@ -308,13 +320,19 @@ footer{
     display: flex;
     justify-content: space-between;
     color: #fff ;
+    /* height: 100%; */
 }
 
 .footer_left{
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange children vertically */
     justify-content: flex-start; /* Start from the top */
-    height: 100%;
+    /* height: 170px; */
+    position: relative;
+}
+
+.footer_head{
+    font-size: 30px;
 }
 
 .footer_right{
@@ -330,11 +348,13 @@ footer{
 }
 
 .footer_copyright{
+    position: absolute;
     font-family: Gilroy;
     /* margin-top: 50px; */
     /* display: flex; */
     /* margin-top: 100%; */
     font-size: 18px;
+    bottom: 10px;
     color:#aeaeae;
 }
 
@@ -342,11 +362,11 @@ footer{
     font-family: Gilroy;
     font-weight: bold;
     color:#ffff9e;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .blog_inner{
-    margin-left: 130px;
+    margin-left: 100px;
 
 }
 
@@ -354,4 +374,5 @@ footer{
     margin-top: 20px;
     font-family: Gilroy;
     font-weight: normal;
+    font-size: 15px;
 }
